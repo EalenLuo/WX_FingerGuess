@@ -1,21 +1,84 @@
 /**index.wxss**/
-.userinfo {
+
+.game_container {
+  width: 100%;
+  height: 1440rpx;
+  background: yellow;
+}
+
+.game_head {
+
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+
+  color: #000;
+  font-size: 26rpx;
+}
+
+.img_result_wrap {
+  width: 80%;
+  margin: 20rpx auto 0;
+  overflow: hidden;
+}
+
+.img_ai {
+
+  float: left;
+}
+
+.img_user {
+  float: right;
+}
+
+image{
+  width: 280rpx;
+  height: 236rpx;
+}
+
+.text_result {
+  color: red;
+  width: 100%;
+  height: 250rpx;
+  line-height: 250rpx;
+}
+
+.game_choose {
+  background: greenyellow;
+  width: 90%;
+  margin: 20rpx auto 0;
+  height: 600rpx;
+  text-align: center;
+}
+
+.choose_tip {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 40rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+
+}
+.img_choose_wrap {
+
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 40rpx;
+}
+.choose_pics {
+  flex: 1;
+  text-align: center;
+}
+.choose_pic {
+  width: 140rpx;
+  height: 118rpx;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
+.btn_again {
+  margin-top: 50rpx;
 
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
 }

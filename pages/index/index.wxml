@@ -1,13 +1,23 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class='game_container'>
+
+  <view class='game_head'>
+    <text class='title'>你已经获胜了0次</text>
+    <view class='img_result_wrap'>
+      <image class='img_ai' src='../img/step.png'></image>
+      <image class='img_user' src='../img/clipper.png'></image>
+    </view>
+    <text class='text_result'>结果</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+  <view class='game_choose'>
+    <text class='choose_tip'> 出拳吧，少年！</text>
+    <view class='img_choose_wrap'>
+      <view bindtap='myChoose' class='choose_pics' wx:for="{{src}}" wx:key="{{index}}" id="{{index}}">
+        <image class='choose_pic' src='{{item}}'></image>
+      </view>
+    </view>
+    <button size='mini' class='btn_again'>再来一次</button>
   </view>
+
 </view>
