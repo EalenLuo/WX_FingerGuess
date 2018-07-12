@@ -7,16 +7,19 @@
 }
 
 .game_head {
-
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
-.title {
-
+.titleWin {
   color: #000;
-  font-size: 26rpx;
+  font-size: 30rpx;
+}
+
+.titleFail {
+  color: #000;
+  font-size: 30rpx;
 }
 
 .img_result_wrap {
@@ -50,7 +53,7 @@ image{
   background: greenyellow;
   width: 90%;
   margin: 20rpx auto 0;
-  height: 600rpx;
+  height: 500rpx;
   text-align: center;
 }
 

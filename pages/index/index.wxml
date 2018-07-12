@@ -1,13 +1,17 @@
 <!--index.wxml-->
 <view class='game_container'>
-
   <view class='game_head'>
-    <text class='title'>你已经获胜了0次</text>
-    <view class='img_result_wrap'>
-      <image class='img_ai' src='../img/step.png'></image>
-      <image class='img_user' src='../img/clipper.png'></image>
+    <view>
+      <text class='titleWin'>你已经获胜了<text>{{winCount}}</text>次</text>
     </view>
-    <text class='text_result'>结果</text>
+    <view>
+      <text class='titleFail'>你已经输了<text>{{failedCount}}</text>次</text>
+    </view>
+    <view class='img_result_wrap'>
+      <image class='img_ai' src="{{imgAi}}"></image>
+      <image class='img_user' src="{{imgUser}}"></image>
+    </view>
+    <text class='text_result'>{{gameResult}}</text>
   </view>
 
   <view class='game_choose'>
@@ -17,7 +21,7 @@
         <image class='choose_pic' src='{{item}}'></image>
       </view>
     </view>
-    <button size='mini' class='btn_again'>再来一次</button>
+    <button size='mini' class='btn_again' bindtap='playAgain'>再来一次</button>
   </view>
 
 </view>
